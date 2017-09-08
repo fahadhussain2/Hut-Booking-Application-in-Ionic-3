@@ -6,9 +6,12 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  
+  // secondPage = SecondPagePage;
 
   constructor(public navCtrl: NavController) {
 
   }
+  
 
 }

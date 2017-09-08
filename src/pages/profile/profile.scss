@@ -1,0 +1,56 @@
+page-profile {
+    .content-md {
+        background-image: url("./../assets/icon/printed-bg.png");
+        background-position: right 5px top;
+        background-color: rgba(249, 241, 237, 0.48) !important;
+      }
+
+      .no-color ion-item{
+        background-color: transparent !important;
+      }
+
+      .item{
+        background-color: transparent !important        
+      }
+
+    .profile-item {
+        text-align: center;
+      }
+      
+      .profile-picture {
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        padding: 0px;
+        border-radius: 100%;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        margin: 0 auto;
+        width: 128px;
+        height: 128px;
+        overflow: hidden;
+      }
+      
+      .profile-picture img {
+        // width: 128px;
+        // border-radius: 100%;
+
+      }
+      
+      .profile-name {
+        padding-top: 20px;
+        font-size: x-large !important;
+        font-weight: bold !important;
+        text-transform: capitalize;
+      }
+
+      ion-item .item-inner {
+        border-bottom: transparent !important;
+      }
+
+      .ion-item{
+        background-color: transparent !important;
+        
+      }
+
+      
+}

@@ -5,6 +5,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { LoginPage } from '../pages/login/login';
+import { MenuPage } from '../pages/menu/menu';
+import { HutsPage } from '../pages/huts/huts'
 
 @Component({
   templateUrl: 'app.html'
@@ -12,18 +15,29 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any}>;
+
+  splash: boolean =true;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
+    if(localStorage.getItem("userObj")){
+      this.rootPage = MenuPage;
+    }
+
+    else{
+      this.rootPage = LoginPage
+    }
+
     // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
-    ];
+    // this.pages = [
+    //   { title: 'Home', component: HomePage },
+    //   { title: 'List', component: ListPage },
+    //   { title: 'Logout', component: ListPage}
+    // ];
 
   }
 
@@ -33,6 +47,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+    setTimeout(() => this.splash = false, 4000);
     });
   }
 

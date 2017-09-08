@@ -1,0 +1,33 @@
+<!--
+  Generated template for the BookingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>booking</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+  <ion-label>Date</ion-label>
+  <ion-datetime displayFormat="D MMM YYYY" pickerFormat="DDDD MMMM YYYY" (ionChange)="checkAvailability()" [(ngModel)]="myDate"></ion-datetime>
+</ion-item>
+
+<ion-item>
+  <button *ngIf="!enableBookButton; else available" ion-button color="primary" outline block  (click)="bookMe()" [disabled]="!enableBookButton" class="disabled">Book Me</button>
+</ion-item>
+
+<ion-item>
+  <ng-template #available>
+  <button ion-button color="primary" outline block (click)="bookMe()" class="enabled">Book Me</button>  
+  </ng-template>
+</ion-item>
+
+</ion-content>

@@ -1,0 +1,48 @@
+page-addhut {
+  .content-md {
+    background-image: url("./../assets/icon/printed-bg.png");
+    background-color: rgba(249, 241, 237, 0.48) !important;
+  }
+  .label-info{
+    font-weight: 600;
+    margin-left: 30px;
+    color: inherit !important;
+  }
+  .provider-info-heading{
+    font-size: 1.5em;
+    color: #c53743;
+  }
+  .item-md .item-button {
+    height: 43px;
+  }
+  .item-detail{
+    margin: -10px !important;
+  }
+  .card-md {
+    background: rgba(29, 295, 255, 0.51) !important;
+  }
+  .dateTimeValue{
+    padding: 0;
+    color: black !important;
+  }
+  .address{
+    white-space: normal;
+    float: right;
+    width: 118px !important;
+    display: block;
+  }
+
+  .scroll {
+        height: 100%
+      }
+ 
+      #map {
+        width: 94%;
+        height: 100%;
+      }
+
+      .delete-icon{
+        border: 0px
+      }
+
+}

@@ -1,0 +1,85 @@
+page-signup {
+ion-content {
+    // background-image: url("./../assets/icon/login-cover-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  ion-list {
+    margin-top: 10% !important;
+  }
+  .item-md {
+    background-color: transparent !important;
+  }
+  .title {
+    height: 280px;
+    //height:calc(100vh - 360px);
+    width: 100vw;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .sign-up-container {
+    margin-top: 15% !important;
+  }
+  .sign-in {
+    background-color: #d945A5;
+    height: 42px;
+    width: 80%;
+    margin: 5px auto;
+  }
+  .sign-up {
+    background-color: #f47882;
+    height: 42px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  ion-label {
+    img {
+      height: 30px;
+      margin-left: 45px;
+    }
+  }
+  .item {
+    height: 56px;
+  }
+  .forgot-password {
+    color: #d945A5;
+    //margin-top: -11px;
+    text-align: center;
+  }
+  .social-connect {
+    text-align: center;
+  }
+  .social-icon {
+    display: block;
+    margin: 0 auto;
+    height: 35px !important;
+  }
+  ion-row {
+    display: block;
+    margin: 0 auto;
+  }
+  ion-grid {
+    margin-top: -15px;
+    width: 45% !important;
+  }
+  .color-pink {
+    color: #d945A5;
+  }
+
+  .item-detail {
+    margin: -10px !important;
+  }
+  .genderSelect {
+    padding: 0;
+    color: black !important;
+    overflow: visible !important;
+  }
+  .label-info {
+    margin-left: 124px;
+  }
+
+  .select-text {
+    min-width: 64px !important;
+  }
+}

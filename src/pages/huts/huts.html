@@ -1,0 +1,104 @@
+<!--
+  Generated template for the HutsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="pink">
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>
+      Huts
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="margin-top: 10px !important;">
+    <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (keyup)="onInput($event)"
+    (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+  <ion-slides pager sliderPerView = "1">
+    <ion-slide *ngFor="let hut of huts | async" class="provider-info">
+      <div >
+        <!-- <ion-item>
+          <ion-avatar item-left>
+            <img src="{{hut.images[0]}}">
+          </ion-avatar>
+          <h2>  </h2>
+        </ion-item> -->
+        <div class="img-container">
+        <img src="{{hut.images[0]}}">          
+        </div>
+        <ion-item>
+          <button ion-button color="primary" outline block (click)="goToImageGallery(hut.images)">View Images</button>
+        </ion-item>
+        <ion-item>
+          <h2 class="provider-info-heading">Hut Info</h2>
+        </ion-item>
+
+        <ion-item class="item-detail">
+          <ion-label class="label-info">Name</ion-label>
+          <ion-label> {{hut.name}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item-detail">
+          <ion-label class="label-info">Unit No</ion-label>
+          <ion-label> {{hut.unitNo}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item-detail">
+          <ion-label class="label-info">Location</ion-label>
+          <ion-label> {{hut.location}} </ion-label>
+        </ion-item>
+
+        <ion-item class="item-detail">
+          <ion-label class="label-info">Address</ion-label>
+          <ion-label> {{hut.address}} </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <h2 class="provider-info-heading">Package Details</h2>
+        </ion-item>
+
+        <ion-item class="item-detail">
+          <ion-label class="label-info">No of Rooms</ion-label>
+          <ion-label> {{hut.noOfRooms}} </ion-label>
+        </ion-item>
+
+        <div >
+          <ion-item class="item-detail">
+            <ion-label class="label-info">No of Persons</ion-label>
+            <ion-label> {{hut.noOfPersons}} </ion-label>
+          </ion-item>
+        </div>
+
+        <ion-item class="item-detail">
+          <ion-label class="label-info">Rent</ion-label>
+          <ion-label> {{hut.rent}} </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <h2 class="provider-info-heading">Description</h2>
+        </ion-item>
+
+        <ion-item class="item-detail">
+          <ion-label class="desc-info whiteSpace"> {{hut.description}} </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <button ion-button color="primary" outline block (click)="checkAvailability(hut.$key)">Check Availability</button>
+        </ion-item>
+
+      </div>
+    </ion-slide>
+
+  </ion-slides>
+
+
+</ion-content>
+

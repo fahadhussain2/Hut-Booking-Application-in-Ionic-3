@@ -1,0 +1,87 @@
+page-huts {
+  .content-md {
+    background-image: url("./../assets/icon/printed-bg.png");
+    background-color: rgba(249, 241, 237, 0.48) !important;
+  }
+
+  .no-color{
+    background-color: transparent !important;
+  }
+
+.searchbar{
+    margin-top: -10px  !important;
+    z-index: 1000 !important;
+    padding-top: 0px !important;
+  }
+  .provider-info{
+    .title{
+      color: #c53743;
+    }
+    .rates{
+      float: right;
+      margin-top: -18px;
+      font-weight: 500;
+      span{
+        font-weight: 400;
+        color: #c53743;
+      }
+    }
+    .location{
+      float: left;
+      color: #7d7d7d;
+      font-size: 13px;
+    }
+    .desc{
+      float: left;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      width: calc(100%);
+    }
+  }
+  .label-info{
+    font-weight: 600;
+    margin-left: 30px;
+  }
+  .desc-info{
+    margin-left: 30px;
+  }
+  .provider-info-heading{
+    font-size: 1.5em;
+    color: #c53743;
+  }
+  .item-md .item-button {
+    height: 35px;
+  }
+  .item-detail{
+    margin: -10px !important;
+  }
+  .item-md h2 {
+    font-size: 2rem;
+    color: #c53743;
+  }
+  .swiper-slide {
+    overflow-y: scroll !important;
+    display: block !important;
+  }
+  ion-item .item-inner {
+    border-bottom: transparent !important;
+  }
+  .whiteSpace{
+    white-space: normal !important;
+  }
+  .img-container {
+        width: 80%;
+        height: 200px;
+        // border: 1px solid;
+        position: relative;
+        margin: 0 auto
+    }
+    .img-container img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

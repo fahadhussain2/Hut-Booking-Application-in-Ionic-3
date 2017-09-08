@@ -1,0 +1,20 @@
+page-booking {
+    ion-item .item-inner {
+        border-bottom: transparent !important;
+      }
+
+      .disabled {
+        background-color: red;
+        height: 42px;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .enabled {
+        background-color: green;
+        height: 42px;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+}
